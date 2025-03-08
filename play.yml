@@ -4,6 +4,7 @@
   user: ansible
   become: yes
   connections: ssh
+  gather_facts: yes
   tasks:
     - name: remove docker container if exists
       command: docker rm -f chandu
