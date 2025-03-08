@@ -3,7 +3,7 @@
   hosts: dev
   user: ansible
   become: yes
-  connections: ssh
+  connection: ssh
   gather_facts: yes
   tasks:
     - name: remove docker container if exists
